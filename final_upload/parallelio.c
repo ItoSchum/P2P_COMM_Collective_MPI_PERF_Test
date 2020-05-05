@@ -29,6 +29,7 @@ static __inline__ ticks getticks(void)
   return (((unsigned long long)tbu0) << 32) | tbl;
 }
 
+
 /* Main function */
 int main(int argc, char **argv)
 {
