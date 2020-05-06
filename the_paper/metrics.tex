@@ -1,5 +1,6 @@
 %Performance metrics
 
+
 To estimate the execution time according to Hockney's model,
 we used the formula \textbf{t(s) = l + s / b}. In the formula,
 \textbf{s} stands for the message size,
@@ -46,6 +47,9 @@ The \textbf{bandwidth} can be claculated by using message size timed by its data
         Bandwidth = \frac{MessageSize * sizeof(DataType)} {AverageExecutionTime}
     \end{aligned}
 \end{equation*}
+
+
+Apart from benchmarking the communication efficiency of the parallel system, we also intend to evaluate the scaling efficiency of the system. Andahl's law \cite{hill2008amdahl} gives the upper-bound of scaling up stating that the parallelization optimization would be limited by the portion of critical serial portion of the process. This phenomenon is closely related to strong scaling. On the other hand, Gustafson's law \cite{gustafson1988reevaluating} also establishes the lower-bound of scaling, which is based on the approximations that the parllel part scales linearly with the amount of resources, and that the serial part does not increase with respect to the size of the problem \cite{scalabilityStrongWeakScaling}. 
 
 We evaluate the scalability of our modeling results for both strong scaling and weak scaling. The strong scaling refers to the case where problem size is fixed and number of processing elements increases. Strong scaling can be used as justification for CPU-bound programs.This type of program don't scale up very well and it's hard to get good performance at large process elements count. The strong scaling efficiency is calculated by
 \begin{equation*}
