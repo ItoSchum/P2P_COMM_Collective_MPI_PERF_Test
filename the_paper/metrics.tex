@@ -1,0 +1,13 @@
+%Performance metrics
+
+We evaluate the scalability of our modeling results for both strong scaling and weak scaling. The strong scaling refers to the case where problem size is fixed and number of processing elements increases. Strong scaling can be used as justification for CPU-bound programs.This type of program don't scale up very well and it's hard to get good performance at large process elements count. The strong scaling efficiency is calculated by
+\begin{equation*}
+t_1 / ( N * t_N ) * 100\% 
+\end{equation*}
+where $t_1$ represents the time taken to complete one unit of work on a MPI rank and $t_N$ represents the time taken to complete N units of work. 
+
+The weak scaling is the case where workload on each processing elements stays fixed and the amount of processing elements increases to increase the total problem size. Weak scaling is jused as justification for programs that are memory or other system resources bound. This type of programs scales up well at large process elemtns count. The weak scaling efficiency is calculated by
+\begin{equation*}
+( t_1 / t_N ) * 100\% 
+\end{equation*}
+where just as the strong scaling efficiency, $t_1$ represents the amount of time taken to complete one unit of work and $t_N$ represents the time taken to complete N units of work on N processing elements.
