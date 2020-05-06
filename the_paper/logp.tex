@@ -1,0 +1,19 @@
+As for the LogP, LogGP and PLogP model. We at first intended to get the parameters from AiMOS based on the Netgauge toolkit\cite{hoefler2007netgauge} mentioned above. But it turned out that this toolkit doesn't work when we run it on AiMOS. We spent hours trying to fix this problem in order to continue our experiment but we failed to do so. A possible cause for the failure is that the program is out-of-date and isn't compatible with the AiMOS system. We also tried to implement the algorithm referencing the paper related to this toolkit\cite{hoefler2007low}, but we didn't finish the implementation. We were forced to run the toolkit on our own laptop. The laptop used has CPU: Intel® Core™ i7-8750H CPU @ 2.20GHz × 12  and GPU: GTX 1060 6G. We record the parameters that we mearued under this setting in the following table. 
+
+\begin{table}[H]
+\begin{tabular}{lllllll}
+L(ms)  & s(bytes) & o\_s(ms) & o\_r(ms) & g(ms)  & G(ms/bytes) \\ \hline
+0.2635 & 1        & 0.052    & 0.118    & 0      & 0           \\
+0.2635 & 1025     & 0.123    & 0.306    & 0.101  & 0.000125    \\
+0.2635 & 2049     & 0.158    & 0.381    & 0.107  & 0.000108    \\
+0.2635 & 3073     & 0.184    & 0.484    & 0.115  & 0.000095    \\
+0.2635 & 4097     & 0.644    & 0.671    & 0.074  & 0.000135    \\
+0.2635 & 5121     & 1.076    & 1.163    & 0.012  & 0.00018     \\
+0.2635 & 6145     & 1.28     & 1.182    & -0.002 & 0.000196    \\
+0.2635 & 7169     & 1.348    & 1.301    & -0.004 & 0.000191   
+\end{tabular}
+\caption{LogP and LogGP parameter measured on Laptop}
+\label{tab:my-table}
+\end{table}
+
+Here, L stands for latency, s stands for the message size, o\_s and o\_r stands for two o values available, where o\_s should be used with compatible packet size and o\_r is relatively imprecise and should be used carefully. g: is the approximate point where the fitted curve crosses the y axis. And G is the slope of fitted g,G curve. Detailed calculation and explanation can be found in the paper\cite{hoefler2007low} mentioned above.
