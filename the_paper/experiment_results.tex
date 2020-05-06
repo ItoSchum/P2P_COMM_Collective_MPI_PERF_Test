@@ -1,4 +1,5 @@
 % Experiment results
+The experiment results of Hockney model is shown as below. We estimated the running time for different number of MPI ranks. Figure 1 shows the comparison between them.
 
 For this experiment, the message size chanegs from 1 to 1024 by the power of two.
 And the rank number per node changes from 1 to 6 for up to two nodes.
@@ -33,6 +34,7 @@ After the testing in different conditioins, it is found that the lantency of the
 \caption{Estimated execution time vs message size along different ranks.}
 \end{figure*}
 
+Figure 2 shows the result comparison of estimated execution time across different ranks versus message size and number of ranks. Note that the green column in Figure 2(b) represents the result from running on 2 nodes with each nodes having 6 MPI ranks.
 
 \begin{figure*}[h!]
 \hspace{0mm}
