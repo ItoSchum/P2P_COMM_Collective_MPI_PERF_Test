@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 20:58
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1956,17 +1956,7 @@ LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 27.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
-[2.2]) (./logp.tex
-
-Package natbib Warning: Citation `hoefler2007netgauge' on page 3 undefined on input line 1.
-
-
-Package natbib Warning: Citation `hoefler2007low' on page 3 undefined on input line 1.
-
-
-Package natbib Warning: Citation `hoefler2007low' on page 3 undefined on input line 19.
-
-) (./metrics.tex
+[2.2]) (./metrics.tex
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 7.3pt on input line 38.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.3pt
@@ -1985,7 +1975,7 @@ Overfull \hbox (4.99153pt too wide) in paragraph at lines 50--51
 []\TU/LinLibertine(0)/m/n/9 We evaluate the scalability of our modeling results for both strong
  []
 
-) (./experiment_results.tex [3.3]
+) (./experiment_results.tex
 File: ./media/exe_time_vs_messsage_size_rank_1.png Graphic file (type bmp)
 <./media/exe_time_vs_messsage_size_rank_1.png>
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/bx/n' will be
@@ -2037,6 +2027,23 @@ Class acmart Warning: A possible image without description on input line 55.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+) (./logp.tex
+
+Package natbib Warning: Citation `hoefler2007netgauge' on page 3 undefined on input line 1.
+
+
+Package natbib Warning: Citation `hoefler2007low' on page 3 undefined on input line 1.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3.3]
+Overfull \vbox (14.43988pt too high) has occurred while \output is active []
+
+
+
+Package natbib Warning: Citation `hoefler2007low' on page 4 undefined on input line 19.
+
 ) (./strong-weak-results.tex
 File: ./media/strong.png Graphic file (type bmp)
 <./media/strong.png>
@@ -2044,22 +2051,29 @@ File: ./media/strong.png Graphic file (type bmp)
 
 Class acmart Warning: A possible image without description on input line 7.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4.4]
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
 File: ./media/weak.png Graphic file (type bmp)
 <./media/weak.png>
+
 
 Class acmart Warning: A possible image without description on input line 17.
 
 ) (./conclusion.tex
 
-Package natbib Warning: Citation `leiserson1985fat' on page 4 undefined on input line 5.
+Package natbib Warning: Citation `leiserson1985fat' on page 5 undefined on input line 5.
 
 
-Package natbib Warning: Citation `kim2009cost' on page 4 undefined on input line 5.
+Package natbib Warning: Citation `kim2009cost' on page 5 undefined on input line 5.
 
 
-Package natbib Warning: Citation `wolfe2016modeling' on page 4 undefined on input line 5.
+Package natbib Warning: Citation `wolfe2016modeling' on page 5 undefined on input line 5.
 
-)
+) [5.5]
 No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
@@ -2070,16 +2084,7 @@ Class acmart Warning: Some images may lack descriptions.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[4.4] [5.5] [6.6] [7.7
-
-
-] [8.8
-
-]
+[6.6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (./main.aux)
@@ -2106,10 +2111,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  37565 strings out of 492916
  723276 string characters out of 6133346
- 774823 words of memory out of 5000000
+ 778823 words of memory out of 5000000
  41018 multiletter control sequences out of 15000+600000
  566618 words of font info for 164 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
  65i,17n,101p,1520b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (8 pages).
+Output written on main.pdf (6 pages).
