@@ -21,9 +21,31 @@ While the disadvantage is that it will presume the communication performance or 
 
 To determine latency, it reuires to execute the benchmark for itration time equal to zero.
 
-More specifically, to calculate the total execution time,
+More specifically, to calculate the \textbf{total execution time},
 it simply subtracts the end timestamp generated after the for loop of iteration
 by the start timestamp, both of which are generated via the function \textbf{MPI\_Time()}.
+
+\begin{equation*}
+    \begin{aligned}
+    TotalExecutionTime = EndTimeStamp - StartTimeStamp
+    \end{aligned}
+\end{equation*}
+
+The \textbf{average executioin time} can be calculated via using the message size timed by MAX\_MEASUREMENTS to split the total execution time
+
+\begin{equation*}
+    \begin{aligned}
+        AverageExecutionTime = \frac{TotalExecutionTime} {MessageSize * MAX\_MEASUREMENTS}
+    \end{aligned}
+\end{equation*}
+
+The \textbf{bandwidth} can be claculated by using message size timed by its data size to be split by its average execution time.
+
+\begin{equation*}
+    \begin{aligned}
+        Bandwidth = \frac{MessageSize * sizeof(DataType)} {AverageExecutionTime}
+    \end{aligned}
+\end{equation*}
 
 We evaluate the scalability of our modeling results for both strong scaling and weak scaling. The strong scaling refers to the case where problem size is fixed and number of processing elements increases. Strong scaling can be used as justification for CPU-bound programs.This type of program don't scale up very well and it's hard to get good performance at large process elements count. The strong scaling efficiency is calculated by
 \begin{equation*}
