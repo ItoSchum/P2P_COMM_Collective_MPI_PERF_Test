@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 19:17
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1782,10 +1782,6 @@ Requested font "ntxexa" at 6.2pt
 Package natbib Warning: Citation `pjevsivac2007performance' on page 1 undefined on input line 3.
 
 
-Underfull \vbox (badness 2512) has occurred while \output is active []
-
-
-
 Package natbib Warning: Citation `ma2012performance' on page 1 undefined on input line 5.
 
 
@@ -1794,32 +1790,26 @@ Package natbib Warning: Citation `hoefler2007netgauge' on page 1 undefined on in
 
 Package natbib Warning: Citation `hoefler2007low' on page 1 undefined on input line 7.
 
-) (./game_of_life.tex
-
-Package natbib Warning: Citation `gardener1970mathematical' on page 1 undefined on input line 3.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+)
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 36.135pt on input line 6.
+(Font)              scaled to size 36.135pt on input line 110.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 36.135pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
-LaTeX Font Info:    Calculating math sizes for size <36.135> on input line 6.
+LaTeX Font Info:    Calculating math sizes for size <36.135> on input line 110.
 
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine(0)/m/n' in size <36.135> not available
-(Font)              size <24.88> substituted on input line 6.
+(Font)              size <24.88> substituted on input line 110.
 
 Requested font "cmr17" at 24.88pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine(0)/m/n' in size <26.37839> not available
-(Font)              size <24.88> substituted on input line 6.
+(Font)              size <24.88> substituted on input line 110.
 
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine(0)/m/n' in size <19.87434> not available
-(Font)              size <20.74> substituted on input line 6.
+(Font)              size <20.74> substituted on input line 110.
 
 Requested font "cmr17" at 20.74pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -1878,12 +1868,16 @@ Requested font "ntxexa" at 26.37839pt
 Requested font "ntxexa" at 19.87434pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 6.
+(Font)              scaled to size 6.0pt on input line 110.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 6.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
 [1.1
 
-]) (./gpu_and_cuda.tex
+] (./game_of_life.tex
+
+Package natbib Warning: Citation `gardener1970mathematical' on page 2 undefined on input line 3.
+
+) (./gpu_and_cuda.tex
 
 Package natbib Warning: Citation `aimosibm' on page 2 undefined on input line 3.
 
@@ -1949,25 +1943,20 @@ Requested font "ntxsyc" at 9.0pt
 Requested font "ntxexa" at 9.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
-
-
 Package natbib Warning: Citation `alexandrov1995loggp' on page 2 undefined on input line 19.
 
 
 Package natbib Warning: Citation `kielmann2000fast' on page 2 undefined on input line 26.
 
-) (./performance_metrics.tex
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 24.
+(Font)              scaled to size 9.0pt on input line 27.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 9.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 24.
+(Font)              scaled to size 7.0pt on input line 27.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
- [2.2]) (./experiment_results.tex
+[2.2]) (./experiment_results.tex
 File: ./media/exe_time_vs_messsage_size_rank_1.png Graphic file (type bmp)
 <./media/exe_time_vs_messsage_size_rank_1.png>
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/bx/n' will be
@@ -2019,6 +2008,23 @@ Class acmart Warning: A possible image without description on input line 53.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+) (./metrics.tex
+Overfull \hbox (4.99153pt too wide) in paragraph at lines 28--29
+[]\TU/LinLibertine(0)/m/n/9 We evaluate the scalability of our modeling results for both strong
+ []
+
+) (./strong-weak-results.tex
+File: ./media/strong.png Graphic file (type bmp)
+<./media/strong.png>
+
+
+Class acmart Warning: A possible image without description on input line 7.
+
+File: ./media/weak.png Graphic file (type bmp)
+<./media/weak.png>
+
+Class acmart Warning: A possible image without description on input line 17.
+
 ) (./conclusion.tex
 
 Package natbib Warning: Citation `leiserson1985fat' on page 3 undefined on input line 5.
@@ -2040,17 +2046,21 @@ Class acmart Warning: Some images may lack descriptions.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
 [3.3] [4.4] [5.5] [6.6
 
 
 ] [7.7
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8E39369CF89B915DA9FAB35B5002F319.
 
@@ -2067,12 +2077,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 3 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37531 strings out of 492916
- 722650 string characters out of 6133346
- 773823 words of memory out of 5000000
- 40993 multiletter control sequences out of 15000+600000
+ 37552 strings out of 492916
+ 722917 string characters out of 6133346
+ 775823 words of memory out of 5000000
+ 41010 multiletter control sequences out of 15000+600000
  566488 words of font info for 162 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 65i,17n,101p,1359b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,17n,101p,1520b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (7 pages).
