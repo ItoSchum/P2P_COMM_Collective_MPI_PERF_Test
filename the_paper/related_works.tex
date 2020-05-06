@@ -1,0 +1,7 @@
+% Related works
+
+There are several works discussing the benchmarking of MPI performance on parallel systems using different libraries. Pje{\v{s}}ivac-Grbovi{\'c et al. \cite{pjevsivac2007performance} give a thorough overview of the parallel models, and compare the performances on inter-cluster MPI collective operations on two systems. The authors in the mentioned article also demontrate that the gap between the message sendings depends on the number of unique destination nodes.  
+
+There are also works whose authors discuss the communication performance on the parallel version of Conway's Game of Life. L. Ma et al. \cite{ma2012performance} demonstrate the performance boosting by implementing the algorithm into its parallel counterpart. The article\'s author implemented the parallel program with OpenMP library, which takes advantage of the multithreading in the CPU rather than seeking time efficiency improvement from multi-node perspective.
+
+In our work we referenced an open-source framework for implementing network benchmarks presented by T. Hoefler et al. \cite{hoefler2007netgauge} This framework seperate communication patterns from communication moddules which allows independently added benchmark types and network protocols. The authors also presented a LogGPS pattern \cite{hoefler2007low} which supports measurement of LogP and LogGP models parameters such as latency, overhead and gap per bytes over MPI.

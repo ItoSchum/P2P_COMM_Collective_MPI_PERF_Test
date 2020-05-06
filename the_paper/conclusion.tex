@@ -1,0 +1,5 @@
+% Conclusion and future works
+
+In this work we perform benchmarking on four different parallel models to evaluate the perforamnce of the CUDA-aided Game of Life program. The GPU-accelerated program is integrated with MPI's communication mechanism to effectively manage the memory access as well as transfering among different nodes. 
+
+For future works, there are two possible extensions on the program to study how different mechanism may further improve or deteriorate the performance of the current version of Game of Life program. The first possible direction is to incorporate multithreading to the current version to observe how sharing resources on the same node may affect the message communication, and another possible study involves the execution of the same GPU-accelerated program on different topologies such as the Fat Tree \cite{leiserson1985fat}, Dragonfly \cite{kim2009cost} or Slimfly \cite{wolfe2016modeling} networks to investigate the difference in performance described with the mentioned parallel models. 

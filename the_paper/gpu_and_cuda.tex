@@ -1,0 +1,9 @@
+% GPU and CUDA Toolkit
+
+According to \cite{aimosibm}, AiMOS uses NVidia Tesla V100 GPUs in conjunction with the compute nodes. The NVIDIA Tesla V100 accelerator contains the Volta GV100 GPU. Volta is the codename for NVidia\'s GPU microarchitecture release on December 7, 2017. Volta was NVidia\'s first chip to feature Tensor Cores, designed specially to yield higher deep learning performance than regular CUDA cores. \cite{volta2017}. The architecture is implemented with TSMC\'s 12 nm FinFET process.
+
+Tesla V100 delivers 7.8 TFLOPS of double precision floating point (FP64) performance, 15.7 TFLOPS of single precision (FP32) performance, and 125 Tensor TFLOPS based on GPU Boost clock. 
+
+In AiMOS cluster, there are 16 nodes each containing four NVidia Tesla V100 GPUs with 16 GiB of memory each. In addition, there are 252 nodes each possessing six of the same accelerators with 32 GiB of memory each \cite{DCSsupercomputer}.
+
+The CUDA Toolkit version used in AiMOS is CUDA 9.1 and 10.0 \cite{DCSsupercomputer}.

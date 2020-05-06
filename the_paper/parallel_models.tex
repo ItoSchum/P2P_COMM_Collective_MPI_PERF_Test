@@ -1,0 +1,31 @@
+% Models to describe the systems
+
+To verify the communication performance of the GPU-accelerated MPI-aided Game of Life program, different configurations of nodes are set. The collective MPI performance is expressed in terms of the four common netowkring performance models: Hockney \cite{hockney1994communication}, LogP \cite{culler1993logp}, LogGP \cite{alexandrov1995loggp}, and PLogP \cite{kielmann2000fast}. The parallel models can be seen as a sequence of proposals towarad establishing the proper description for both point-to-point and collective commnication time consumption under any parallel computing system. 
+
+The Hockney model is considered the simplest parallel model of communication. The model assumes that the time taken to send a message is 
+\begin{equation*}
+T = \alpha + \beta m
+\end{equation*}
+
+where $\alpha$ is the size of the messsage, and $\beta$ is the inverse of the bandwidth, while $m$ represents the message size. The model is suitable to describe point-to-point communication systems. 
+
+The LogP model intends to offer a simple yet more detail view to facilitate the finding of bottlenecks in possible communication latency. The model id described with four parameters: the latency $L$, overhead $o$, gap between the sending of messages $g$, and the nmber of processors or nodes involved in the communication $P$. The model assumes that only small amount of messages is transferred simultaneously. The time needed to transfer messages between nodes takes 
+\begin{equation*}
+T = L + 2o
+\end{equation*}
+
+where $L$ is the latency, and $o$ as the overhead.
+
+Since LogP does not monitor transmission of long messages, LogGP further extend such aspect in its description. A new parameter  Gap per byte (G) is taken into account, which is defined as the time per byte for a long message \cite{alexandrov1995loggp}. Unlike the LogP model which restricts to constant small size messages, LogGP allows sending larger messages. Typically, time taken to transfer a message is:
+\begin{equation*}
+T = L + 2o + (m - 1)G
+\end{equation*}
+
+where $G$ is the gap per byte and $m$ is the size of the message.
+
+In the work of T. Kielmann et al. \cite{kielmann2000fast}, parametrized LogP is introduced as a slight extension of LogP and LogGP models that is capable of monitoring the minimal gap between two messages without saturating the network for each message size. In addition to the parameters contained in LogP, additional parameters are included: the sender and receiver overheads, message transfer time and data copying time to and from the network interfaces are included in the latency. Moreover, the gap paraneter is defined as the minimum time interval between consecutive message transmission or reception. The overall time spent in the message transfering can be expressed as:
+\begin{equation*}
+T = L + g(m)
+\end{equation*}
+
+where $g(m)$ is the gap per message. The worth pointing out that the sender $o_s(m)$ and receiver $o_r(m)$ overheads depend on the message size.
