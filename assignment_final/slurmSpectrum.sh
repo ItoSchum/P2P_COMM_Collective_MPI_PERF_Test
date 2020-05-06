@@ -22,7 +22,7 @@ module load spectrum-mpi
 module load cuda
 
 pattern=1
-worldsize=16384
+worldsize=1024
 iteration=128
 threads=1024
 print_or_not=0

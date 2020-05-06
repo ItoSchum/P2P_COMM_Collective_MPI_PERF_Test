@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     iterations = atoi(argv[3]);
     threads = atoi(argv[4]);
     printFlag = atoi(argv[5]);
-    unsigned int MAX_MSG_LEN = 16384;
+    unsigned int MAX_MSG_LEN = worldSize;
     unsigned int MAX_MEASUREMENTS = iterations;
 
     // Initialize MPI
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
         worldSize = msg_size;
         // MPI iterations. Data is sent and received between ranks
         int iter;
-        for (iter = 0; iter < 0; iter++)
+        for (iter = 0; iter < MAX_MEASUREMENTS; iter++)
         {
             // fill myrank's top_ghost_row with the last row received from the previous rank
             MPI_Irecv(top_ghost_row, worldSize, MPI_UNSIGNED_CHAR, ((myrank + numranks - 1) % numranks), 0, MPI_COMM_WORLD, &recvReq[0]);
@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
             endTime = MPI_Wtime();
             totalTime = endTime - startTime;
             printf("Total Execution Time: %.3f ms\n", totalTime * 1000);
-            printf("Msg len: %d\nAverage Execution Time: %lf ms\nBandwidth: %f MByte/s\n", msg_size, totalTime / (msg_size * MAX_MEASUREMENTS) * 1000, msg_size * sizeof(int) / (totalTime / (2 * MAX_MEASUREMENTS)) / 1000000);
+            printf("Msg len: %d\nAverage Execution Time: %lf ms\nBandwidth: %f MByte/s\n", msg_size, totalTime / (msg_size * MAX_MEASUREMENTS) * 1000, msg_size * sizeof(int) / (totalTime / (msg_size * MAX_MEASUREMENTS)) / 1000000);
             // printf("If output is turned on, the worlds for each rank are printed to their corressponding .txt files.\n\n");
             // printf("###################################################################################################");
         }

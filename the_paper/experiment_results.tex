@@ -1,6 +1,10 @@
 % Experiment results
 The experiment results of Hockney model is shown as below. We estimated the running time for different number of MPI ranks. Figure 1 shows the comparison between them.
 
+For this experiment, the message size chanegs from 1 to 1024 by the power of two.
+And the rank number per node changes from 1 to 6 for up to two nodes.
+After the testing in different conditioins, it is found that the lantency of the network is almost static which is fixed around 0.004 ms.
+
 \begin{figure*}[h]
 \centering
 \hspace*{\fill}
@@ -35,7 +39,7 @@ Figure 2 shows the result comparison of estimated execution time across differen
 \begin{figure*}[h!]
 \hspace{0mm}
 \subfloat[Comparison of estimated execution time vs message size across different ranks.]{
-	\includegraphics[width=0.5\linewidth]{estimated_execution_time_vs_message_size.png}	
+	\includegraphics[width=0.5\linewidth]{estimated_execution_time_vs_message_size.png}
 }
 \hspace*{\fill}
 \subfloat[Estimated execution time in relation to ranks]{
