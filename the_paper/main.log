@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 19:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 MAY 2020 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1956,7 +1956,26 @@ LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 27.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.0pt
  -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
-[2.2]) (./experiment_results.tex
+[2.2]) (./metrics.tex
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+ -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+ -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
+
+Overfull \hbox (7.98679pt too wide) detected at line 40
+[][]
+ []
+
+
+Overfull \hbox (4.99153pt too wide) in paragraph at lines 50--51
+[]\TU/LinLibertine(0)/m/n/9 We evaluate the scalability of our modeling results for both strong
+ []
+
+) (./experiment_results.tex
 File: ./media/exe_time_vs_messsage_size_rank_1.png Graphic file (type bmp)
 <./media/exe_time_vs_messsage_size_rank_1.png>
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/bx/n' will be
@@ -2008,25 +2027,6 @@ Class acmart Warning: A possible image without description on input line 53.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./metrics.tex
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 7.3pt on input line 38.
-Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 7.3pt
- -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 5.5pt on input line 38.
-Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex-text;" at 5.5pt
- -> /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
-
-Overfull \hbox (7.98679pt too wide) detected at line 40
-[][]
- []
-
-
-Overfull \hbox (4.99153pt too wide) in paragraph at lines 50--51
-[]\TU/LinLibertine(0)/m/n/9 We evaluate the scalability of our modeling results for both strong
- []
-
 ) (./strong-weak-results.tex
 File: ./media/strong.png Graphic file (type bmp)
 <./media/strong.png>
@@ -2039,15 +2039,21 @@ File: ./media/weak.png Graphic file (type bmp)
 
 Class acmart Warning: A possible image without description on input line 17.
 
+[3.3]
+Overfull \vbox (71.00146pt too high) has occurred while \output is active []
+
 ) (./conclusion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: Citation `leiserson1985fat' on page 3 undefined on input line 5.
+ [4.4]
+
+Package natbib Warning: Citation `leiserson1985fat' on page 5 undefined on input line 5.
 
 
-Package natbib Warning: Citation `kim2009cost' on page 3 undefined on input line 5.
+Package natbib Warning: Citation `kim2009cost' on page 5 undefined on input line 5.
 
 
-Package natbib Warning: Citation `wolfe2016modeling' on page 3 undefined on input line 5.
+Package natbib Warning: Citation `wolfe2016modeling' on page 5 undefined on input line 5.
 
 )
 No file main.bbl.
@@ -2061,14 +2067,10 @@ Class acmart Warning: Some images may lack descriptions.
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[3.3] [4.4]
-Overfull \vbox (90.48079pt too high) has occurred while \output is active []
+Overfull \vbox (8.70787pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (90.48079pt too high) has occurred while \output is active []
+Overfull \vbox (8.70787pt too high) has occurred while \output is active []
 
  [5.5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
@@ -2092,12 +2094,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 3 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37558 strings out of 492916
- 723197 string characters out of 6133346
- 776823 words of memory out of 5000000
- 41014 multiletter control sequences out of 15000+600000
+ 37559 strings out of 492916
+ 723207 string characters out of 6133346
+ 774823 words of memory out of 5000000
+ 41015 multiletter control sequences out of 15000+600000
  566618 words of font info for 164 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 65i,17n,101p,1520b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,17n,101p,1520b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (5 pages).

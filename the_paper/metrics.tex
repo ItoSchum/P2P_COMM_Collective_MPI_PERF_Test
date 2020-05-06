@@ -6,13 +6,13 @@ we used the formula \textbf{t(s) = l + s / b}. In the formula,
 \textbf{l} stands for the latency of the network,
 \textbf{b} stands for the bandwidth of the network.
 
-\begin{equation*}
-    \begin{aligned}
-    T = & \alpha + \beta \\
-    \alpha = & l = Latency \\
-    \beta = & \frac{s} {b} = \frac{Message Size} {Bandwidth}\\
-    \end{aligned}
-\end{equation*}
+
+\begin{gather*}
+    T = \alpha + \beta \\
+    \alpha = l = Latency \\
+    \beta = \frac{s}{b} = \frac{Message Size}{Bandwidth}
+\end{gather*}
+
 
 Then it came with the quesion "How can we determine the latency and the bandwidth?"
 In this benchmark model, it assumes that some process A sends a message to process B, while process B sends message back
@@ -27,7 +27,7 @@ by the start timestamp, both of which are generated via the function \textbf{MPI
 
 \begin{equation*}
     \begin{aligned}
-    TotalExecutionTime = EndTimeStamp - StartTimeStamp
+        TotalExecutionTime = EndTimeStamp - StartTimeStamp
     \end{aligned}
 \end{equation*}
 
